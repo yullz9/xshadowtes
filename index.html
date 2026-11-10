@@ -444,49 +444,18 @@
             align-items: flex-end;
             justify-content: center;
             border-bottom: 2px solid rgba(255, 255, 255, 0.85);
-            padding: 0.16rem 0.45rem 0.22rem 0.45rem;
+            padding: 0.2rem 0.45rem 0.25rem 0.45rem;
             width: 100%;
         }
         .dnd-slot-frac-den {
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            padding: 0.3rem 0.45rem 0.14rem 0.45rem;
+            padding: 0.25rem 0.45rem 0.15rem 0.45rem;
             width: 100%;
         }
         .dnd-slot-frac .dnd-exp-group {
-            margin-bottom: clamp(0.45rem, min(1.1vw, 1.6dvh), 0.72rem);
-        }
-        /* Mode Rapat Proporsional untuk Soal dengan Banyak Langkah & Pecahan Bertingkat */
-        .dnd-step-grid.is-dense-grid {
-            row-gap: clamp(0.18rem, 0.55dvh, 0.32rem);
-            column-gap: clamp(0.35rem, 0.9vw, 0.55rem);
-            padding: 0.15rem 0.4rem;
-        }
-        .dnd-step-grid.is-dense-grid .dnd-drop-slot.slot-step-base,
-        .dnd-step-grid.is-dense-grid .dnd-drop-slot.slot-frac-base {
-            width: clamp(1.32rem, min(2.7vw, 3.6dvh), 1.78rem);
-            height: clamp(1.32rem, min(2.7vw, 3.6dvh), 1.78rem);
-            font-size: clamp(0.72rem, min(1.3vw, 1.85dvh), 0.95rem);
-        }
-        .dnd-step-grid.is-dense-grid .dnd-drop-slot.slot-step-exp,
-        .dnd-step-grid.is-dense-grid .dnd-drop-slot.slot-frac-exp {
-            width: clamp(1.02rem, min(2.1vw, 2.85dvh), 1.38rem);
-            height: clamp(1.02rem, min(2.1vw, 2.85dvh), 1.38rem);
-            font-size: clamp(0.6rem, min(1.05vw, 1.5dvh), 0.78rem);
-        }
-        .dnd-step-grid.is-dense-grid .dnd-exp-group {
-            margin-bottom: clamp(0.38rem, min(0.9vw, 1.25dvh), 0.56rem);
-            gap: 0.12rem;
-        }
-        .dnd-step-grid.is-dense-grid .dnd-slot-frac {
-            margin: 0.02rem 0.12rem;
-        }
-        .dnd-step-grid.is-dense-grid .dnd-slot-frac-num {
-            padding: 0.1rem 0.35rem 0.15rem 0.35rem;
-        }
-        .dnd-step-grid.is-dense-grid .dnd-slot-frac-den {
-            padding: 0.22rem 0.35rem 0.08rem 0.35rem;
+            margin-bottom: clamp(0.5rem, min(1.2vw, 1.8dvh), 0.78rem);
         }
         .dnd-drop-slot.slot-frac-base {
             width: clamp(1.6rem, min(3.3vw, 4.8dvh), 2.15rem);
@@ -497,122 +466,6 @@
             width: clamp(1.25rem, min(2.6vw, 3.8dvh), 1.68rem);
             height: clamp(1.25rem, min(2.6vw, 3.8dvh), 1.68rem);
             font-size: clamp(0.68rem, min(1.2vw, 1.8dvh), 0.88rem);
-        }
-        .dnd-paren-frac-wrap {
-            display: inline-flex;
-            align-items: center;
-            vertical-align: middle;
-            position: relative;
-            margin: 0.05rem 0.15rem;
-        }
-        .dnd-paren-frac-box {
-            display: inline-flex;
-            align-items: stretch;
-            vertical-align: middle;
-        }
-        .dnd-paren-frac-box > .math-paren-svg {
-            width: clamp(0.55rem, 1.2vw, 0.82rem);
-            height: auto;
-            align-self: stretch;
-            color: rgba(255, 255, 255, 0.88);
-        }
-        .dnd-paren-frac-wrap > .dnd-exp-group {
-            align-self: flex-start;
-            margin-bottom: 0;
-            margin-top: -0.25rem;
-            margin-left: 0.16rem;
-        }
-        /* Elemen Bentuk Akar & Pangkat Pecahan untuk Drag and Drop Stage 8 */
-        .dnd-radical-wrap {
-            display: inline-flex;
-            align-items: stretch;
-            vertical-align: middle;
-            position: relative;
-            margin: 0.06rem 0.14rem;
-        }
-        .dnd-radical-index-wrap {
-            display: inline-flex;
-            align-items: flex-start;
-            align-self: flex-start;
-            margin-top: -0.18rem;
-            margin-right: -0.2rem;
-            z-index: 2;
-        }
-        .dnd-drop-slot.slot-rad-idx {
-            width: clamp(1.18rem, min(2.4vw, 3.4dvh), 1.55rem);
-            height: clamp(1.18rem, min(2.4vw, 3.4dvh), 1.55rem);
-            font-size: clamp(0.62rem, min(1.15vw, 1.7dvh), 0.84rem);
-            border-radius: 0.35rem;
-        }
-        .dnd-radical-sym-svg {
-            width: clamp(0.85rem, 1.7vw, 1.2rem);
-            height: auto;
-            align-self: stretch;
-            flex-shrink: 0;
-            color: rgba(255, 255, 255, 0.9);
-            margin-right: -1px;
-        }
-        .dnd-radical-body {
-            display: inline-flex;
-            align-items: flex-end;
-            border-top: 2px solid rgba(255, 255, 255, 0.9);
-            padding: 0.22rem 0.32rem 0.08rem 0.22rem;
-            margin-top: 0.06rem;
-        }
-        .dnd-exp-frac {
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-left: 0.2rem;
-            margin-bottom: clamp(0.45rem, min(1.1vw, 1.6dvh), 0.72rem);
-        }
-        .dnd-exp-frac-num {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1.8px solid rgba(255, 255, 255, 0.88);
-            padding: 0 0.2rem 0.14rem 0.2rem;
-            width: 100%;
-        }
-        .dnd-exp-frac-den {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.14rem 0.2rem 0 0.2rem;
-            width: 100%;
-        }
-        .dnd-step-grid.is-dense-grid .dnd-drop-slot.slot-rad-idx {
-            width: clamp(1rem, min(2vw, 2.75dvh), 1.32rem);
-            height: clamp(1rem, min(2vw, 2.75dvh), 1.32rem);
-            font-size: clamp(0.56rem, min(1vw, 1.45dvh), 0.74rem);
-        }
-        .dnd-step-grid.is-dense-grid .dnd-radical-body {
-            padding: 0.14rem 0.24rem 0.05rem 0.16rem;
-        }
-        .dnd-static-base {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: clamp(1.75rem, min(3.7vw, 5.4dvh), 2.4rem);
-            padding: 0 0.22rem;
-            font-size: clamp(1rem, min(2vw, 2.8dvh), 1.35rem);
-            font-family: Georgia, 'Times New Roman', serif;
-            font-style: italic;
-            font-weight: 700;
-            color: #ffffff;
-            user-select: none;
-        }
-        .dnd-paren-char {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: clamp(1.75rem, min(3.7vw, 5.4dvh), 2.4rem);
-            padding: 0 0.12rem;
-            font-size: clamp(1.1rem, min(2.2vw, 3.1dvh), 1.5rem);
-            font-weight: 700;
-            color: #e5e5e5;
-            user-select: none;
         }
         .dnd-drop-slot.is-filled {
             border-style: solid;
@@ -995,6 +848,70 @@
         .map-node-btn.locked-shake {
             animation: lockedShake 0.35s ease-in-out;
         }
+        /* Badge Bintang & Nilai Akhir Proporsional di Atas Ikon Stage pada Peta */
+        .map-score-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: clamp(-0.65rem, min(-1vw, -1.5vh), -0.3rem);
+            z-index: 22;
+            pointer-events: none;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+        }
+        .map-node-btn:hover .map-score-header {
+            transform: translateY(-4px) scale(1.06);
+        }
+        .map-stars-arch {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: clamp(0.1rem, 0.35vw, 0.24rem);
+            margin-bottom: clamp(0.06rem, 0.25vh, 0.16rem);
+        }
+        .map-star-svg {
+            width: clamp(0.68rem, min(1.5vw, 2.4vh), 1.15rem);
+            height: clamp(0.68rem, min(1.5vw, 2.4vh), 1.15rem);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .map-star-svg.star-center {
+            width: clamp(0.82rem, min(1.8vw, 2.85vh), 1.38rem);
+            height: clamp(0.82rem, min(1.8vw, 2.85vh), 1.38rem);
+            transform: translateY(-2px);
+        }
+        .map-star-svg.star-left {
+            transform: rotate(-14deg) translateY(1px);
+        }
+        .map-star-svg.star-right {
+            transform: rotate(14deg) translateY(1px);
+        }
+        .map-star-svg.is-earned {
+            color: #fde047;
+            filter: drop-shadow(0 0 5px rgba(250, 204, 21, 0.95)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.55));
+        }
+        .map-star-svg.is-empty {
+            color: rgba(255, 255, 255, 0.18);
+            filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.9));
+        }
+        .map-score-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.22rem;
+            padding: clamp(0.08rem, 0.25vh, 0.16rem) clamp(0.38rem, 0.8vw, 0.62rem);
+            border-radius: 9999px;
+            background: linear-gradient(180deg, rgba(24, 24, 24, 0.94) 0%, rgba(8, 8, 8, 0.98) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            font-size: clamp(0.48rem, min(0.95vw, 1.55vh), 0.72rem);
+            line-height: 1;
+            letter-spacing: 0.06em;
+            white-space: nowrap;
+        }
+        .map-score-pill.is-scored {
+            border-color: rgba(253, 224, 71, 0.65);
+            box-shadow: 0 0 12px rgba(250, 204, 21, 0.35), 0 4px 10px rgba(0, 0, 0, 0.95), inset 0 0 6px rgba(253, 224, 71, 0.18);
+        }
         /* Plakat Stage Berlekuk Organik / Chamfered dengan Ornamen Berlian */
         .map-plaque-wrap {
             position: relative;
@@ -1350,16 +1267,26 @@
 
         <!-- Ending Screen Overlay -->
         <div id="ending-screen" class="hidden absolute inset-0 z-25 flex flex-col items-center justify-center bg-black/90 backdrop-blur-md p-6 text-center">
-            <div class="w-16 h-16 rounded-full bg-white/10 border border-white/30 flex items-center justify-center mb-4 shadow-[0_0_50px_rgba(255,255,255,0.5)]">
+            <div class="w-16 h-16 rounded-full bg-white/10 border border-white/30 flex items-center justify-center mb-3 shadow-[0_0_50px_rgba(255,255,255,0.5)]">
                 <div class="w-4 h-4 rounded-full bg-white animate-ping"></div>
             </div>
-            <h2 id="ending-title" class="title-font text-3xl sm:text-5xl font-bold text-white mb-2">FAJAR MENYINGSING</h2>
-            <p id="ending-desc" class="text-neutral-300 text-sm max-w-md mb-6">Kamu berhasil melewati bayang-bayang hutan, memecahkan teka-teki eksponen, dan menemukan kedamaian.</p>
-            <p id="final-stats" class="text-xs text-neutral-400 uppercase tracking-widest mb-8"></p>
+            <h2 id="ending-title" class="title-font text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-2">FAJAR MENYINGSING</h2>
+            <p id="ending-desc" class="text-neutral-300 text-xs sm:text-sm max-w-md mb-4">Kamu berhasil melewati bayang-bayang hutan, memecahkan teka-teki eksponen, dan menemukan kedamaian.</p>
+
+            <!-- Tampilan Bintang & Nilai Akhir Stage -->
+            <div id="ending-score-showcase" class="flex flex-col items-center justify-center bg-neutral-950/90 border border-white/25 rounded-2xl px-6 py-3.5 mb-4 shadow-[0_0_30px_rgba(255,255,255,0.12)]">
+                <div id="ending-stars-row" class="flex items-center justify-center gap-2 mb-1.5"></div>
+                <div class="flex items-baseline gap-2">
+                    <span class="text-[10px] sm:text-xs uppercase tracking-widest text-neutral-400 font-semibold">Nilai Akhir:</span>
+                    <span id="ending-score-value" class="title-font text-xl sm:text-2xl font-extrabold text-amber-300 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">100</span>
+                </div>
+            </div>
+
+            <p id="final-stats" class="text-[11px] sm:text-xs text-neutral-400 uppercase tracking-widest mb-6"></p>
             <div class="flex flex-wrap justify-center gap-4">
-                <button id="btn-next-stage" class="noir-btn px-6 py-3 text-white border-white/50 shadow-[0_0_25px_rgba(255,255,255,0.25)] font-semibold">Lanjut ke Stage Berikutnya</button>
-                <button id="btn-ending-map" class="noir-btn px-6 py-3 text-white border-white/35">Pilih di Peta Stage</button>
-                <button id="btn-play-again" class="noir-btn px-6 py-3 text-neutral-300 border-white/20">Mainkan Ulang Stage</button>
+                <button id="btn-next-stage" class="hidden noir-btn px-6 py-3 text-white border-white/50 shadow-[0_0_25px_rgba(255,255,255,0.25)] font-semibold">Lanjut ke Stage Berikutnya</button>
+                <button id="btn-ending-map" class="noir-btn px-6 py-3 text-white border-white/50 shadow-[0_0_25px_rgba(255,255,255,0.22)] font-semibold">Peta Stage</button>
+                <button id="btn-play-again" class="noir-btn px-6 py-3 text-neutral-200 border-white/25">Ulangi Stage</button>
             </div>
         </div>
     </div>
@@ -2977,6 +2904,8 @@ let windZones = [];
 let laserBeams = []; 
 let solvedQuizGates = {};
 let completedStages = {};
+let stageScores = {};
+let stageQuizMistakes = 0;
 let mapActive = false;
 let bossEntity = null;
 
@@ -5383,6 +5312,9 @@ function renderMapNodes() {
         const isUnlocked = isStageUnlocked(meta.stage);
         const isCurrent = (currentStage === meta.stage) && isUnlocked;
         const isDone = !!completedStages[meta.stage];
+        const scoreData = stageScores[meta.stage] || null;
+        const earnedStars = scoreData ? scoreData.stars : 0;
+        const finalScore = scoreData ? scoreData.score : null;
 
         const btn = document.createElement('button');
         btn.type = 'button';
@@ -5390,8 +5322,40 @@ function renderMapNodes() {
         btn.style.left = `${meta.x}%`;
         btn.style.top = `${meta.y}%`;
         btn.title = isUnlocked
-            ? meta.name
+            ? (isDone && finalScore !== null ? `${meta.name} • Nilai: ${finalScore} (${earnedStars} Bintang)` : meta.name)
             : `${meta.name} (Terkunci - Selesaikan stage sebelumnya terlebih dahulu)`;
+
+        const renderStarSVG = (posClass, filled) => `
+            <svg class="map-star-svg ${posClass} ${filled ? 'is-earned' : 'is-empty'}" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.92 6.26L22 9.27l-5.05 4.73L18.18 21 12 17.56 5.82 21l1.23-7-5.05-4.73 7.08-1.01L12 2z"/>
+            </svg>
+        `;
+
+        const topScoreHeaderHTML = isDone && finalScore !== null ? `
+            <div class="map-score-header">
+                <div class="map-stars-arch">
+                    ${renderStarSVG('star-left', earnedStars >= 1)}
+                    ${renderStarSVG('star-center', earnedStars >= 2)}
+                    ${renderStarSVG('star-right', earnedStars >= 3)}
+                </div>
+                <div class="map-score-pill is-scored">
+                    <span class="text-neutral-300 font-semibold">NILAI</span>
+                    <span class="text-amber-300 font-extrabold tabular-nums">${finalScore}</span>
+                </div>
+            </div>
+        ` : `
+            <div class="map-score-header opacity-75">
+                <div class="map-stars-arch">
+                    ${renderStarSVG('star-left', false)}
+                    ${renderStarSVG('star-center', false)}
+                    ${renderStarSVG('star-right', false)}
+                </div>
+                <div class="map-score-pill">
+                    <span class="text-neutral-400 font-medium">NILAI</span>
+                    <span class="text-neutral-500 font-bold tabular-nums">--</span>
+                </div>
+            </div>
+        `;
 
         // Penanda siluet karakter berdiri di atas pulau stage yang sedang aktif (selain Stage 1 yang sudah memiliki siluet di tebingnya)
         const boyMarkerHTML = (isCurrent && meta.stage !== 1) ? `
@@ -5423,6 +5387,7 @@ function renderMapNodes() {
                </svg>`;
 
         btn.innerHTML = `
+            ${topScoreHeaderHTML}
             <div class="map-island-wrap">
                 ${boyMarkerHTML}
                 ${getStageIslandSVG(meta.stage)}
@@ -6800,221 +6765,40 @@ const stageMathQuizzes = {
             options: ["Saya Paham, Mulai Petualangan Stage 6!"]
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 6 - SOAL 1: TEBING TALI AYUN",
-            subtitle: "Seret angka dari panel bawah untuk menguraikan sifat (a × b)<sup>m</sup> = a<sup>m</sup> × b<sup>m</sup>!",
-            question: "Uraikan dan hitung nilai perpangkatan dari (2 × 3)<sup>2</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "(2 × 3)<sup>2</sup>",
-                    terms: [
-                        {
-                            baseSlot: 0,
-                            expSlots: [{ slotIndex: 1 }]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 2,
-                            expSlots: [{ slotIndex: 3 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 4 },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 5
-                        }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_b1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_e1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_b2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_e2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b1', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's2_b2', role: 'base', answer: '9', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['3', '2', '2', '2', '9', '4']
-            ],
-            explanation: "Tepat sekali! Berdasarkan sifat (a × b)<sup>m</sup> = a<sup>m</sup> × b<sup>m</sup>, maka (2 × 3)<sup>2</sup> = 2<sup>2</sup> × 3<sup>2</sup> = 4 × 9."
+            type: 'quiz',
+            title: "STAGE 6 - BAB II: TEBING TALI AYUN",
+            subtitle: "Gunakan sifat pangkat dari perkalian (a × b)<sup>m</sup> = a<sup>m</sup> × b<sup>m</sup>:",
+            question: "Manakah bentuk penjabaran yang tepat dari (3 × 7)<sup>4</sup>?",
+            options: ["3<sup>4</sup> × 7", "3 × 7<sup>4</sup>", "3<sup>4</sup> × 7<sup>4</sup>", "21<sup>8</sup>"],
+            correctIndex: 2,
+            explanation: "Tepat sekali! Berdasarkan sifat (a × b)<sup>m</sup> = a<sup>m</sup> × b<sup>m</sup>, maka (3 × 7)<sup>4</sup> = 3<sup>4</sup> × 7<sup>4</sup>."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 6 - SOAL 2: SANGKAR BURUNG GAGAK",
-            subtitle: "Hati-hati! Pangkatkan angka koefisien maupun variabel di dalam kurung:",
-            question: "Uraikan dan sederhanakan bentuk dari (2a)<sup>3</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "(2a)<sup>3</sup>",
-                    terms: [
-                        {
-                            baseSlot: 0,
-                            expSlots: [{ slotIndex: 1 }]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseText: 'a',
-                            expSlots: [{ slotIndex: 2 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 3,
-                            baseText: 'a',
-                            expSlots: [{ slotIndex: 4 }]
-                        }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_b1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_e1', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_e2', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_b1', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's2_e1', role: 'exp', answer: '3', placeholder: '?' }
-            ],
-            explanation: "Luar biasa! (2a)<sup>3</sup> = 2<sup>3</sup> × a<sup>3</sup> = 8a<sup>3</sup> (angka 2 ikut dipangkatkan 3 menjadi 8)."
+            type: 'quiz',
+            title: "STAGE 6 - BAB III: SANGKAR BURUNG GAGAK",
+            subtitle: "Hati-hati! Jangan lupa memangkatkan angka koefisien di depan variabel:",
+            question: "Bentuk sederhana dari (2a)<sup>4</sup> adalah...",
+            options: ["2a<sup>4</sup>", "8a<sup>4</sup>", "16a<sup>4</sup>", "6a<sup>4</sup>"],
+            correctIndex: 2,
+            explanation: "Luar biasa! (2a)<sup>4</sup> = 2<sup>4</sup> × a<sup>4</sup> = 16a<sup>4</sup> (angka 2 ikut dipangkatkan 4 menjadi 16)."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 6 - SOAL 3: MENARA GEROBAK TANGGA",
-            subtitle: "Gunakan sifat kebalikannya: a<sup>m</sup> × b<sup>m</sup> = (a × b)<sup>m</sup> untuk menyederhanakan:",
-            question: "Uraikan dan sederhanakan bentuk dari 2<sup>3</sup> × 4<sup>3</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "2<sup>3</sup> × 4<sup>3</sup>",
-                    terms: [
-                        {
-                            parenInnerTerms: [
-                                { baseSlot: 0 },
-                                { prefixOp: '×', baseSlot: 1 }
-                            ],
-                            expSlots: [{ slotIndex: 2 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 3,
-                            expSlots: [{ slotIndex: 4 }]
-                        }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_b1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_b2', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's1_e1', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_b1', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's2_e1', role: 'exp', answer: '3', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['4', '2', '3', '8', '3']
-            ],
-            explanation: "Cerdas! Karena pangkatnya sama-sama 3, basisnya langsung dikalikan: 2<sup>3</sup> × 4<sup>3</sup> = (2 × 4)<sup>3</sup> = 8<sup>3</sup>."
+            type: 'quiz',
+            title: "STAGE 6 - BAB IV: MENARA GEROBAK TANGGA",
+            subtitle: "Gunakan sifat kebalikannya: a<sup>m</sup> × b<sup>m</sup> = (a × b)<sup>m</sup> untuk menghitung cepat:",
+            question: "Berapakah bentuk sederhana dari 2<sup>5</sup> × 5<sup>5</sup>?",
+            options: ["10<sup>5</sup>", "10<sup>10</sup>", "7<sup>5</sup>", "10<sup>25</sup>"],
+            correctIndex: 0,
+            explanation: "Cerdas! Karena pangkatnya sama-sama 5, basisnya bisa langsung dikalikan: 2<sup>5</sup> × 5<sup>5</sup> = (2 × 5)<sup>5</sup> = 10<sup>5</sup>."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 6 - SOAL 4: PUNCAK ATAP KACA",
-            subtitle: "Ujian Pamungkas Stage 6! Pecah bilangan 6<sup>4</sup> menjadi (2 × 3)<sup>4</sup> = 2<sup>4</sup> × 3<sup>4</sup>:",
-            question: "Uraikan dan hitung nilai akhir dari {6<sup>4</sup>|2<sup>4</sup> × 3<sup>2</sup>} langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "{6<sup>4</sup>|2<sup>4</sup> × 3<sup>2</sup>}",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 0,
-                                    expSlots: [{ slotIndex: 1 }]
-                                },
-                                {
-                                    prefixOp: '×',
-                                    baseSlot: 2,
-                                    expSlots: [{ slotIndex: 3 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseSlot: 4,
-                                    expSlots: [{ slotIndex: 5 }]
-                                },
-                                {
-                                    prefixOp: '×',
-                                    baseSlot: 6,
-                                    expSlots: [{ slotIndex: 7 }]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 8,
-                            expSlots: [{ slotIndex: 9 }]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 10,
-                            expSlots: [{ slotIndex: 11 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 12 },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 13
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 14 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_nb1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_ne1', role: 'exp', answer: '4', placeholder: '?' },
-                { id: 's1_nb2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_ne2', role: 'exp', answer: '4', placeholder: '?' },
-                { id: 's1_db1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_de1', role: 'exp', answer: '4', placeholder: '?' },
-                { id: 's1_db2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_de2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's2_e1', role: 'exp', answer: '0', placeholder: '?' },
-                { id: 's2_b2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_e2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's3_b1', role: 'base', answer: '1', placeholder: '?' },
-                { id: 's3_b2', role: 'base', answer: '9', placeholder: '?' },
-                { id: 's4_res', role: 'base', answer: '9', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['3', '4', '2', '4', '2', '4', '3', '2', '2', '0', '3', '2', '1', '9', '9'],
-                ['2', '4', '3', '4', '3', '2', '2', '4', '2', '0', '3', '2', '1', '9', '9'],
-                ['3', '4', '2', '4', '3', '2', '2', '4', '2', '0', '3', '2', '1', '9', '9'],
-                ['2', '4', '3', '4', '2', '4', '3', '2', '3', '2', '2', '0', '9', '1', '9'],
-                ['3', '4', '2', '4', '3', '2', '2', '4', '3', '2', '2', '0', '9', '1', '9']
-            ],
-            explanation: "Sempurna! {6<sup>4</sup>|2<sup>4</sup> × 3<sup>2</sup>} = {2<sup>4</sup> × 3<sup>4</sup>|2<sup>4</sup> × 3<sup>2</sup>} = 2<sup>0</sup> × 3<sup>2</sup> = 1 × 9 = 9!"
+            type: 'quiz',
+            title: "STAGE 6 - BAB V: PUNCAK ATAP KACA",
+            subtitle: "Ujian Pamungkas Stage 6! Pecah bilangan komposit menjadi faktor prima:",
+            question: "Berapakah nilai akhir dari operasi pecahan: {6<sup>4</sup>|2<sup>4</sup> × 3<sup>2</sup>}?",
+            options: ["3", "6", "9", "18"],
+            correctIndex: 2,
+            explanation: "Sempurna! Ubah 6<sup>4</sup> menjadi (2 × 3)<sup>4</sup> = 2<sup>4</sup> × 3<sup>4</sup>. Lalu bagi dengan 2<sup>4</sup> × 3<sup>2</sup> sehingga tersisa 3<sup>4-2</sup> = 3<sup>2</sup> = 9!"
         }
     ],
     7: [
@@ -7026,273 +6810,40 @@ const stageMathQuizzes = {
             options: ["Saya Paham, Taklukkan Stage 7!"]
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 7 - SOAL 1: JEMBATAN RAPUH & LISTRIK",
-            subtitle: "Seret angka dari panel bawah untuk menguraikan sifat pangkat pecahan ({a|b})<sup>m</sup> = {a<sup>m</sup>|b<sup>m</sup>}!",
-            question: "Uraikan dan hitung nilai perpangkatan pecahan dari ({2|3})<sup>2</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "({2|3})<sup>2</sup>",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 0,
-                                    expSlots: [{ slotIndex: 1 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseSlot: 2,
-                                    expSlots: [{ slotIndex: 3 }]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [{ baseSlot: 4 }],
-                            denTerms: [{ baseSlot: 5 }]
-                        }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_nb', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_ne', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_db', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_de', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_num', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's2_den', role: 'base', answer: '9', placeholder: '?' }
-            ],
-            explanation: "Tepat sekali! Pembilang dan penyebut masing-masing dipangkatkan 2: ({2|3})<sup>2</sup> = {2<sup>2</sup>|3<sup>2</sup>} = {4|9}."
+            type: 'quiz',
+            title: "STAGE 7 - BAB II: JEMBATAN RAPUH & LISTRIK",
+            subtitle: "Gunakan sifat pangkat dari pecahan ({a|b})<sup>m</sup> = {a<sup>m</sup>|b<sup>m</sup>}:",
+            question: "Berapakah hasil dari ({3|4})<sup>3</sup>?",
+            options: ["{9|12}", "{27|64}", "{3|64}", "{27|12}"],
+            correctIndex: 1,
+            explanation: "Tepat sekali! Pembilang dan penyebut dipangkatkan 3: {3<sup>3</sup>|4<sup>3</sup>} = {27|64}."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 7 - SOAL 2: MENARA KUMPARAN PETIR",
-            subtitle: "Pangkatkan koefisien dan variabel pada pembilang maupun penyebut pecahan:",
-            question: "Uraikan dan sederhanakan bentuk pecahan berpangkat dari ({2a|b<sup>2</sup>})<sup>3</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "({2a|b<sup>2</sup>})<sup>3</sup>",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 0,
-                                    expSlots: [{ slotIndex: 1 }]
-                                },
-                                {
-                                    prefixOp: '×',
-                                    baseText: 'a',
-                                    expSlots: [{ slotIndex: 2 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseText: 'b',
-                                    expSlots: [
-                                        { slotIndex: 3 },
-                                        { op: '×' },
-                                        { slotIndex: 4 }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 5,
-                                    baseText: 'a',
-                                    expSlots: [{ slotIndex: 6 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseText: 'b',
-                                    expSlots: [{ slotIndex: 7 }]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_nb', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_ne1', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_ne2', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_de1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_de2', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_nb', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's2_ne', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_de', role: 'exp', answer: '6', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['2', '3', '3', '3', '2', '8', '3', '6']
-            ],
-            explanation: "Luar biasa! Pembilang: (2a)<sup>3</sup> = 2<sup>3</sup> × a<sup>3</sup> = 8a<sup>3</sup>. Penyebut: (b<sup>2</sup>)<sup>3</sup> = b<sup>2×3</sup> = b<sup>6</sup>. Hasilnya {8a<sup>3</sup>|b<sup>6</sup>}."
+            type: 'quiz',
+            title: "STAGE 7 - BAB III: MENARA KUMPARAN PETIR",
+            subtitle: "Pangkatkan koefisien dan variabel pada pembilang maupun penyebut:",
+            question: "Bentuk sederhana dari ({2x|y<sup>2</sup>})<sup>3</sup> adalah...",
+            options: ["{6x<sup>3</sup>|y<sup>5</sup>}", "{8x<sup>3</sup>|y<sup>6</sup>}", "{2x<sup>3</sup>|y<sup>6</sup>}", "{8x|y<sup>5</sup>}"],
+            correctIndex: 1,
+            explanation: "Luar biasa! Pembilang: (2x)<sup>3</sup> = 2<sup>3</sup>x<sup>3</sup> = 8x<sup>3</sup>. Penyebut: (y<sup>2</sup>)<sup>3</sup> = y<sup>2×3</sup> = y<sup>6</sup>. Hasilnya {8x<sup>3</sup>|y<sup>6</sup>}."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 7 - SOAL 3: TEROWONGAN TEGANGAN TINGGI",
+            type: 'quiz',
+            title: "STAGE 7 - BAB IV: TEROWONGAN TEGANGAN TINGGI",
             subtitle: "Gunakan sifat kebalikannya: {a<sup>m</sup>|b<sup>m</sup>} = ({a|b})<sup>m</sup> untuk mempermudah hitungan:",
-            question: "Uraikan dan hitung nilai dari operasi pecahan {6<sup>2</sup>|2<sup>2</sup>} langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "{6<sup>2</sup>|2<sup>2</sup>}",
-                    terms: [
-                        {
-                            isParenFraction: true,
-                            numTerms: [{ baseSlot: 0 }],
-                            denTerms: [{ baseSlot: 1 }],
-                            expSlots: [{ slotIndex: 2 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 3,
-                            expSlots: [{ slotIndex: 4 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 5 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_num', role: 'base', answer: '6', placeholder: '?' },
-                { id: 's1_den', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_exp', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_e', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '9', placeholder: '?' }
-            ],
-            explanation: "Cerdas! Karena pangkatnya sama-sama 2, kita gabungkan menjadi ({6|2})<sup>2</sup> = 3<sup>2</sup> = 9."
+            question: "Berapakah nilai dari operasi pecahan {24<sup>4</sup>|8<sup>4</sup>}?",
+            options: ["3", "12", "81", "64"],
+            correctIndex: 2,
+            explanation: "Cerdas! Karena pangkatnya sama-sama 4, kita gabungkan: ({24|8})<sup>4</sup> = 3<sup>4</sup> = 81."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 7 - SOAL 4: INTI REAKTOR EKSPONEN",
-            subtitle: "Ujian Pamungkas Stage 7! Gabungkan sifat pecahan berpangkat dengan perkalian dan pembagian eksponen:",
-            question: "Uraikan dan hitung hasil akhir dari ({2|3})<sup>3</sup> × 3<sup>3</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "({2|3})<sup>3</sup> × 3<sup>3</sup>",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 0,
-                                    expSlots: [{ slotIndex: 1 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseSlot: 2,
-                                    expSlots: [{ slotIndex: 3 }]
-                                }
-                            ]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 4,
-                            expSlots: [{ slotIndex: 5 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 6,
-                                    expSlots: [{ slotIndex: 7 }]
-                                },
-                                {
-                                    prefixOp: '×',
-                                    baseSlot: 8,
-                                    expSlots: [{ slotIndex: 9 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseSlot: 10,
-                                    expSlots: [{ slotIndex: 11 }]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 12,
-                            expSlots: [{ slotIndex: 13 }]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 14,
-                            expSlots: [
-                                { slotIndex: 15 },
-                                { op: '−' },
-                                { slotIndex: 16 }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 17 },
-                        { prefixOp: '×', baseSlot: 18 },
-                        { prefixOp: '=', baseSlot: 19 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_nb', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_ne', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_db', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_de', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_mb', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_me', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_nb1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's2_ne1', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_nb2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_ne2', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_db', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_de', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's3_b1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's3_e1', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's3_b2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's3_e2', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's3_e3', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's4_v1', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's4_v2', role: 'base', answer: '1', placeholder: '?' },
-                { id: 's4_res', role: 'base', answer: '8', placeholder: '?' }
-            ],
-            explanation: "Sempurna! ({2|3})<sup>3</sup> × 3<sup>3</sup> = {2<sup>3</sup>|3<sup>3</sup>} × 3<sup>3</sup> = {2<sup>3</sup> × 3<sup>3</sup>|3<sup>3</sup>} = 2<sup>3</sup> × 3<sup>3−3</sup> = 8 × 1 = 8!"
+            type: 'quiz',
+            title: "STAGE 7 - BAB V: INTI REAKTOR EKSPONEN",
+            subtitle: "Ujian Pamungkas Stage 7! Gabungkan sifat pecahan berpangkat dengan perkalian eksponen:",
+            question: "Berapakah hasil akhir dari: ({2|5})<sup>3</sup> × 5<sup>4</sup>?",
+            options: ["40", "20", "80", "10"],
+            correctIndex: 0,
+            explanation: "Sempurna! ({2|5})<sup>3</sup> × 5<sup>4</sup> = {2<sup>3</sup>|5<sup>3</sup>} × 5<sup>4</sup> = 2<sup>3</sup> × 5<sup>4-3</sup> = 8 × 5 = 40!"
         }
     ],
     8: [
@@ -7304,501 +6855,78 @@ const stageMathQuizzes = {
             options: ["Saya Paham, Taklukkan Stage 8!"]
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 8 - SOAL 1: LEMBAH ANGIN PANGKAT PECAHAN",
-            subtitle: "Seret angka dari panel bawah untuk mengubah pangkat pecahan a<sup>{m|n}</sup> menjadi bentuk akar (√[n]{a})<sup>m</sup>!",
-            question: "Uraikan dan hitung nilai dari 8<sup>{2|3}</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "8<sup>{2|3}</sup>",
-                    terms: [
-                        {
-                            isParenRadical: true,
-                            rootIndexSlot: 0,
-                            radTerms: [{ baseSlot: 1 }],
-                            expSlots: [{ slotIndex: 2 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 3,
-                            expSlots: [{ slotIndex: 4 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 5 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_idx', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_rad', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's1_exp', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's2_e', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '4', placeholder: '?' }
-            ],
-            explanation: "Tepat sekali! 8<sup>{2|3}</sup> = (√[3]{8})<sup>2</sup> = 2<sup>2</sup> = 4."
+            type: 'quiz',
+            title: "STAGE 8 - BAB II: LEMBAH ANGIN PANGKAT PECAHAN",
+            subtitle: "Gunakan sifat pangkat pecahan a<sup>{m|n}</sup> = (√[n]{a})<sup>m</sup>:",
+            question: "Berapakah nilai dari 16<sup>{3|4}</sup>?",
+            options: ["8", "12", "6", "4"],
+            correctIndex: 0,
+            explanation: "Tepat sekali! 16<sup>{3|4}</sup> = (√[4]{16})<sup>3</sup> = 2<sup>3</sup> = 8 (karena 2<sup>4</sup> = 16)."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 8 - SOAL 2: MENARA LASER AKAR BERPANGKAT",
-            subtitle: "Gunakan sifat kebalikannya: √[n]{a<sup>m</sup>} = a<sup>{m|n}</sup> untuk menyederhanakan bentuk akar!",
-            question: "Uraikan dan hitung nilai dari √[3]{3<sup>6</sup>} langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "√[3]{3<sup>6</sup>}",
-                    terms: [
-                        {
-                            baseSlot: 0,
-                            expFraction: {
-                                numSlot: 1,
-                                denSlot: 2
-                            }
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 3,
-                            expSlots: [{ slotIndex: 4 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 5 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_b', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_en', role: 'exp', answer: '6', placeholder: '?' },
-                { id: 's1_ed', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_b', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_e', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '9', placeholder: '?' }
-            ],
-            explanation: "Luar biasa! Berdasarkan sifat √[n]{a<sup>m</sup>} = a<sup>{m|n}</sup>, maka √[3]{3<sup>6</sup>} = 3<sup>{6|3}</sup> = 3<sup>2</sup> = 9."
+            type: 'quiz',
+            title: "STAGE 8 - BAB III: MENARA LASER AKAR BERPANGKAT",
+            subtitle: "Hitung masing-masing pangkat pecahan dengan rumus (√[n]{a})<sup>m</sup>:",
+            question: "Berapakah hasil dari 27<sup>{2|3}</sup> + 9<sup>{3|2}</sup>?",
+            options: ["36", "18", "24", "15"],
+            correctIndex: 0,
+            explanation: "Luar biasa! 27<sup>{2|3}</sup> = (√[3]{27})<sup>2</sup> = 3<sup>2</sup> = 9 dan 9<sup>{3|2}</sup> = (√{9})<sup>3</sup> = 3<sup>3</sup> = 27. Maka 9 + 27 = 36."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 8 - SOAL 3: TEROWONGAN KONVERSI BENTUK AKAR",
-            subtitle: "Ubah masing-masing suku berpangkat pecahan menjadi bentuk akar lalu jumlahkan hasilnya!",
-            question: "Uraikan dan hitung hasil dari 8<sup>{2|3}</sup> + 9<sup>{1|2}</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "8<sup>{2|3}</sup> + 9<sup>{1|2}</sup>",
-                    terms: [
-                        {
-                            isParenRadical: true,
-                            rootIndexSlot: 0,
-                            radTerms: [{ baseSlot: 1 }],
-                            expSlots: [{ slotIndex: 2 }]
-                        },
-                        {
-                            prefixOp: '+',
-                            isRadical: true,
-                            rootIndexSlot: 3,
-                            radTerms: [{ baseSlot: 4 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 5,
-                            expSlots: [{ slotIndex: 6 }]
-                        },
-                        {
-                            prefixOp: '+',
-                            baseSlot: 7
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 8 },
-                        { prefixOp: '+', baseSlot: 9 },
-                        { prefixOp: '=', baseSlot: 10 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_idx1', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_rad1', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's1_exp1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_idx2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_rad2', role: 'base', answer: '9', placeholder: '?' },
-                { id: 's2_b1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's2_e1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's3_v1', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's3_v2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '7', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['3', '8', '2', '2', '9', '2', '2', '3', '3', '4', '7']
-            ],
-            explanation: "Cerdas! 8<sup>{2|3}</sup> = (√[3]{8})<sup>2</sup> = 2<sup>2</sup> = 4 dan 9<sup>{1|2}</sup> = √[2]{9} = 3. Maka 4 + 3 = 7."
+            type: 'quiz',
+            title: "STAGE 8 - BAB IV: TEROWONGAN KONVERSI BENTUK AKAR",
+            subtitle: "Ubah bentuk pangkat pecahan a<sup>{m|n}</sup> menjadi bentuk akar √[n]{a<sup>m</sup>}:",
+            question: "Manakah bentuk akar yang senilai dengan 5<sup>{3|4}</sup>?",
+            options: ["√[3]{5<sup>4</sup>}", "√[4]{5<sup>3</sup>}", "4√[3]{5}", "{5<sup>3</sup>|4}"],
+            correctIndex: 1,
+            explanation: "Cerdas! Sesuai sifat a<sup>{m|n}</sup> = √[n]{a<sup>m</sup>}, maka pembilang 3 menjadi pangkat di dalam akar dan penyebut 4 menjadi indeks akar: √[4]{5<sup>3</sup>}."
         },
         {
-            type: 'drag_drop',
-            title: "STAGE 8 - SOAL 4: SINGGASANA SANG PENGUASA AKAR",
-            subtitle: "Ujian Pamungkas Stage 8! Gabungkan sifat pangkat pecahan, pembagian eksponen, dan pangkat nol:",
-            question: "Uraikan dan hitung hasil akhir dari {8<sup>{2|3}</sup> × 9<sup>{1|2}</sup>|2<sup>2</sup>} + 5<sup>0</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "{8<sup>{2|3}</sup> × 9<sup>{1|2}</sup>|2<sup>2</sup>} + 5<sup>0</sup>",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    isParenRadical: true,
-                                    rootIndexSlot: 0,
-                                    radTerms: [{ baseSlot: 1 }],
-                                    expSlots: [{ slotIndex: 2 }]
-                                },
-                                {
-                                    prefixOp: '×',
-                                    isRadical: true,
-                                    rootIndexSlot: 3,
-                                    radTerms: [{ baseSlot: 4 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseSlot: 5,
-                                    expSlots: [{ slotIndex: 6 }]
-                                }
-                            ]
-                        },
-                        {
-                            prefixOp: '+',
-                            baseSlot: 7
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                { baseSlot: 8 },
-                                { prefixOp: '×', baseSlot: 9 }
-                            ],
-                            denTerms: [
-                                { baseSlot: 10 }
-                            ]
-                        },
-                        {
-                            prefixOp: '+',
-                            baseSlot: 11
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 12 },
-                        { prefixOp: '+', baseSlot: 13 },
-                        { prefixOp: '=', baseSlot: 14 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_idx1', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_rad1', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's1_exp1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_idx2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_rad2', role: 'base', answer: '9', placeholder: '?' },
-                { id: 's1_db', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_de', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_z', role: 'base', answer: '1', placeholder: '?' },
-                { id: 's2_n1', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's2_n2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_d', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's2_z', role: 'base', answer: '1', placeholder: '?' },
-                { id: 's3_v1', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's3_v2', role: 'base', answer: '1', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '4', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['3', '8', '2', '2', '9', '2', '2', '1', '3', '4', '4', '1', '3', '1', '4'],
-                ['3', '8', '2', '2', '9', '2', '2', '1', '4', '3', '4', '1', '1', '3', '4']
-            ],
-            explanation: "Sempurna! (√[3]{8})<sup>2</sup> = 4 dan √[2]{9} = 3, sehingga {4 × 3|4} + 1 = 3 + 1 = 4!"
+            type: 'quiz',
+            title: "STAGE 8 - BAB V: SINGGASANA SANG PENGUASA AKAR",
+            subtitle: "Ujian Pamungkas Stage 8! Gabungkan sifat pangkat pecahan a<sup>{m|n}</sup>, pangkat negatif, dan pangkat nol:",
+            question: "Berapakah nilai akhir dari: {8<sup>{2|3}</sup> × 32<sup>{3|5}</sup>|2<sup>-1</sup>} - 99<sup>0</sup>?",
+            options: ["63", "31", "64", "15"],
+            correctIndex: 0,
+            explanation: "Sempurna! 8<sup>{2|3}</sup> = (√[3]{8})<sup>2</sup> = 4 dan 32<sup>{3|5}</sup> = (√[5]{32})<sup>3</sup> = 8, dikalikan menjadi 32. Dibagi 2<sup>-1</sup> ({1|2}) hasilnya 32 × 2 = 64. Dikurangi 99<sup>0</sup> (1) menjadi 64 - 1 = 63!"
         }
     ],
     'boss2': [
         {
-            type: 'drag_drop',
+            type: 'quiz',
             title: "SEGEL SERANGAN BALIK I: PANGKAT BERPANGKAT",
-            subtitle: "Seret angka ke kotak yang tersedia untuk menyambar Sang Raja Leviathan (-25% HP Raja):",
-            question: "Uraikan dan hitung nilai dari {(2<sup>2</sup>)<sup>3</sup>|2<sup>3</sup>} langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "{(2<sup>2</sup>)<sup>3</sup>|2<sup>3</sup>}",
-                    terms: [
-                        {
-                            baseSlot: 0,
-                            expSlots: [
-                                { slotIndex: 1 },
-                                { op: '×' },
-                                { slotIndex: 2 },
-                                { op: '−' },
-                                { slotIndex: 3 }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 4,
-                            expSlots: [
-                                { slotIndex: 5 }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 6 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_b', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_e1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_e2', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_e3', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's2_b', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's2_e', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '8', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['2', '3', '2', '3', '2', '3', '8']
-            ],
-            explanation: "Petir Cahaya Menyambar! {(2<sup>2</sup>)<sup>3</sup>|2<sup>3</sup>} = 2<sup>2×3−3</sup> = 2<sup>3</sup> = 8. Darah Sang Raja berkurang 25%!"
+            subtitle: "Pecahkan segel pertama untuk menyambar Sang Raja Leviathan (-25% HP Raja):",
+            question: "Berapakah hasil akhir dari operasi: {(2<sup>3</sup>)<sup>4</sup> × 2<sup>-5</sup>|2<sup>4</sup>}?",
+            options: ["8", "16", "4", "32"],
+            correctIndex: 0,
+            explanation: "Petir Cahaya Menyambar! (2<sup>3</sup>)<sup>4</sup> = 2<sup>12</sup>. Maka 2<sup>12+(-5)-4</sup> = 2<sup>3</sup> = 8. Darah Sang Raja berkurang 25%!"
         },
         {
-            type: 'drag_drop',
+            type: 'quiz',
             title: "SEGEL SERANGAN BALIK II: PANGKAT PERKALIAN",
             subtitle: "Pecahkan segel kedua di tepi terowongan air untuk melukai Sang Raja (-25% HP Raja):",
-            question: "Uraikan dan hitung nilai dari {(2 × 3)<sup>2</sup>|2<sup>2</sup>} langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "{(2 × 3)<sup>2</sup>|2<sup>2</sup>}",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 0,
-                                    expSlots: [{ slotIndex: 1 }]
-                                },
-                                {
-                                    prefixOp: '×',
-                                    baseSlot: 2,
-                                    expSlots: [{ slotIndex: 3 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseSlot: 4,
-                                    expSlots: [{ slotIndex: 5 }]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 6,
-                            expSlots: [{ slotIndex: 7 }]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 8,
-                            expSlots: [{ slotIndex: 9 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 10 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_nb1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_ne1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_nb2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_ne2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_db', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_de', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b1', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's2_e1', role: 'exp', answer: '0', placeholder: '?' },
-                { id: 's2_b2', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_e2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '9', placeholder: '?' }
-            ],
-            alternateAnswers: [
-                ['3', '2', '2', '2', '2', '2', '2', '0', '3', '2', '9'],
-                ['2', '2', '3', '2', '2', '2', '3', '2', '2', '0', '9'],
-                ['3', '2', '2', '2', '2', '2', '3', '2', '2', '0', '9']
-            ],
-            explanation: "Sambaran Kedua Tepat Sasaran! {(2 × 3)<sup>2</sup>|2<sup>2</sup>} = {2<sup>2</sup> × 3<sup>2</sup>|2<sup>2</sup>} = 2<sup>0</sup> × 3<sup>2</sup> = 9. Darah Sang Raja tersisa 50%!"
+            question: "Gunakan sifat (a × b)<sup>n</sup> = a<sup>n</sup> × b<sup>n</sup> untuk menghitung nilai dari: {12<sup>3</sup>|3<sup>3</sup> × 2<sup>4</sup>}",
+            options: ["4", "8", "6", "2"],
+            correctIndex: 0,
+            explanation: "Sambaran Kedua Tepat Sasaran! 12<sup>3</sup> = (2<sup>2</sup> × 3)<sup>3</sup> = 2<sup>6</sup> × 3<sup>3</sup>. Dibagi 3<sup>3</sup> × 2<sup>4</sup> tersisa 2<sup>6-4</sup> = 2<sup>2</sup> = 4. Darah Sang Raja tersisa 50%!"
         },
         {
-            type: 'drag_drop',
+            type: 'quiz',
             title: "SEGEL SERANGAN BALIK III: PANGKAT PECAHAN",
             subtitle: "Pecahkan segel ketiga untuk menghancurkan perisai mekanik Raja (-25% HP Raja):",
-            question: "Uraikan dan hitung nilai dari ({3|2})<sup>2</sup> × 2<sup>2</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "({3|2})<sup>2</sup> × 2<sup>2</sup>",
-                    terms: [
-                        {
-                            isFraction: true,
-                            numTerms: [
-                                {
-                                    baseSlot: 0,
-                                    expSlots: [{ slotIndex: 1 }]
-                                }
-                            ],
-                            denTerms: [
-                                {
-                                    baseSlot: 2,
-                                    expSlots: [{ slotIndex: 3 }]
-                                }
-                            ]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 4,
-                            expSlots: [{ slotIndex: 5 }]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        {
-                            baseSlot: 6,
-                            expSlots: [{ slotIndex: 7 }]
-                        },
-                        {
-                            prefixOp: '×',
-                            baseSlot: 8,
-                            expSlots: [
-                                { slotIndex: 9 },
-                                { op: '−' },
-                                { slotIndex: 10 }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 11 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_nb', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's1_ne', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_db', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_de', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_mb', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_me', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b1', role: 'base', answer: '3', placeholder: '?' },
-                { id: 's2_e1', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_b2', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's2_e2', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's2_e3', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '9', placeholder: '?' }
-            ],
-            explanation: "Perisai Mekanik Retak! ({3|2})<sup>2</sup> × 2<sup>2</sup> = {3<sup>2</sup>|2<sup>2</sup>} × 2<sup>2</sup> = 3<sup>2</sup> × 2<sup>2−2</sup> = 9. Darah Sang Raja tersisa 25%!"
+            question: "Berapakah hasil akhir dari: ({3|2})<sup>4</sup> × {2<sup>5</sup>|3<sup>2</sup>}?",
+            options: ["18", "12", "9", "24"],
+            correctIndex: 0,
+            explanation: "Perisai Mekanik Retak! ({3|2})<sup>4</sup> = {3<sup>4</sup>|2<sup>4</sup>}. Dikalikan {2<sup>5</sup>|3<sup>2</sup>} menghasilkan 3<sup>4-2</sup> × 2<sup>5-4</sup> = 9 × 2 = 18. Darah Sang Raja tersisa 25%!"
         },
         {
-            type: 'drag_drop',
+            type: 'quiz',
             title: "SEGEL PAMUNGKAS IV: KOMBINASI SIFAT 5–8",
-            subtitle: "Segel Terakhir! Gabungkan sifat pangkat pecahan, bentuk akar, dan pangkat berpangkat (-25% HP Raja):",
-            question: "Uraikan dan hitung nilai akhir dari 8<sup>{2|3}</sup> + √[3]{2<sup>6</sup>} − (7<sup>2</sup>)<sup>0</sup> langkah demi langkah:",
-            stepRows: [
-                {
-                    leftPrompt: "8<sup>{2|3}</sup> + √[3]{2<sup>6</sup>} − (7<sup>2</sup>)<sup>0</sup>",
-                    terms: [
-                        {
-                            isParenRadical: true,
-                            rootIndexSlot: 0,
-                            radTerms: [{ baseSlot: 1 }],
-                            expSlots: [{ slotIndex: 2 }]
-                        },
-                        {
-                            prefixOp: '+',
-                            baseSlot: 3,
-                            expFraction: {
-                                numSlot: 4,
-                                denSlot: 5
-                            }
-                        },
-                        {
-                            prefixOp: '−',
-                            baseSlot: 6
-                        }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 7 },
-                        { prefixOp: '+', baseSlot: 8 },
-                        { prefixOp: '−', baseSlot: 9 }
-                    ]
-                },
-                {
-                    leftPrompt: "",
-                    terms: [
-                        { baseSlot: 10 }
-                    ]
-                }
-            ],
-            slots: [
-                { id: 's1_idx', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_rad', role: 'base', answer: '8', placeholder: '?' },
-                { id: 's1_exp', role: 'exp', answer: '2', placeholder: '?' },
-                { id: 's1_b2', role: 'base', answer: '2', placeholder: '?' },
-                { id: 's1_en', role: 'exp', answer: '6', placeholder: '?' },
-                { id: 's1_ed', role: 'exp', answer: '3', placeholder: '?' },
-                { id: 's1_z', role: 'base', answer: '1', placeholder: '?' },
-                { id: 's2_v1', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's2_v2', role: 'base', answer: '4', placeholder: '?' },
-                { id: 's2_v3', role: 'base', answer: '1', placeholder: '?' },
-                { id: 's3_res', role: 'base', answer: '7', placeholder: '?' }
-            ],
-            explanation: "Kemenangan Mutlak! 8<sup>{2|3}</sup> = (√[3]{8})<sup>2</sup> = 4, ditambah √[3]{2<sup>6</sup>} = 2<sup>{6|3}</sup> = 4, dikurangi (7<sup>2</sup>)<sup>0</sup> = 1. Hasilnya: 4 + 4 − 1 = 7!"
+            subtitle: "Segel Terakhir! Gabungkan sifat pangkat pecahan, akar, dan pangkat berpangkat (-25% HP Raja):",
+            question: "Berapakah nilai akhir dari: {27<sup>{2|3}</sup> × 16<sup>{3|4}</sup>|(2<sup>1</sup>)<sup>3</sup>} + ({10|5})<sup>2</sup>?",
+            options: ["13", "11", "17", "9"],
+            correctIndex: 0,
+            explanation: "Kemenangan Mutlak! 27<sup>{2|3}</sup> = 9 dan 16<sup>{3|4}</sup> = 8. Dibagi (2<sup>1</sup>)<sup>3</sup> = 8 menghasilkan 9. Ditambah ({10|5})<sup>2</sup> = 2<sup>2</sup> = 4, maka 9 + 4 = 13!"
         }
     ]
 };
@@ -8008,6 +7136,7 @@ function initWorld(fullReset = false) {
     if (fullReset) {
         activeCheckpointIndex = 0;
         deathCount = 0;
+        stageQuizMistakes = 0;
         playerLives = INITIAL_STAGE_LIVES;
         solvedQuizGates = {};
         document.getElementById('death-count').textContent = '0';
@@ -10426,46 +9555,75 @@ function updateGame(dt = 1) {
         gameEnded = true;
         completedStages[currentStage] = true;
         audio.playCleanse();
+
+        // Hitung nilai akhir (0–100) dan perolehan bintang (1–3 bintang)
+        const rawScore = Math.round(playerLives - deathCount * 5 - stageQuizMistakes * 10);
+        const finalStageScore = (deathCount === 0 && stageQuizMistakes === 0)
+            ? 100
+            : Math.max(10, Math.min(100, rawScore));
+        const earnedStars = finalStageScore >= 85 ? 3 : (finalStageScore >= 60 ? 2 : 1);
+
+        const prevRecord = stageScores[currentStage];
+        const bestScore = prevRecord ? Math.max(prevRecord.score, finalStageScore) : finalStageScore;
+        const bestStars = bestScore >= 85 ? 3 : (bestScore >= 60 ? 2 : 1);
+        stageScores[currentStage] = {
+            score: bestScore,
+            lastScore: finalStageScore,
+            stars: bestStars
+        };
+
+        const endingStarsRow = document.getElementById('ending-stars-row');
+        const endingScoreValue = document.getElementById('ending-score-value');
+        if (endingStarsRow) {
+            endingStarsRow.innerHTML = [1, 2, 3].map(idx => {
+                const isLit = idx <= earnedStars;
+                const sizeClass = idx === 2 ? 'w-8 h-8 sm:w-9 sm:h-9 -translate-y-1' : 'w-6 h-6 sm:w-7 sm:h-7';
+                const colorClass = isLit
+                    ? 'text-yellow-300 drop-shadow-[0_0_10px_rgba(250,204,21,0.9)]'
+                    : 'text-white/20';
+                return `<svg class="${sizeClass} ${colorClass} transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l2.92 6.26L22 9.27l-5.05 4.73L18.18 21 12 17.56 5.82 21l1.23-7-5.05-4.73 7.08-1.01L12 2z"/>
+                </svg>`;
+            }).join('');
+        }
+        if (endingScoreValue) {
+            endingScoreValue.textContent = String(finalStageScore);
+        }
+
         const nextStageBtn = document.getElementById('btn-next-stage');
         const playAgainBtn = document.getElementById('btn-play-again');
         const endingTitle = document.getElementById('ending-title');
         const endingDesc = document.getElementById('ending-desc');
 
+        if (nextStageBtn) {
+            nextStageBtn.classList.add('hidden');
+        }
+
         const nextStageId = getNextStageId(currentStage);
         if (currentStage === 'boss1') {
             endingTitle.textContent = "RAJA BAYANGAN TUMBANG!";
             endingDesc.textContent = "Luar biasa! Kamu berhasil memecahkan 4 Segel Eksponen, menyambar Arachne Umbra hingga 0% HP, dan membuka jalan menuju Stage 5!";
-            playAgainBtn.textContent = "Lawan Ulang Raja I";
+            playAgainBtn.textContent = "Ulangi Raja I";
         } else if (currentStage === 'boss2') {
             endingTitle.textContent = "LEVIATHAN AKAR TUMBANG!";
             endingDesc.textContent = "Selamat! Kamu telah menaklukkan seluruh Stage 1–8 beserta kedua Raja Penguasa Bayangan dan menjadi Master Eksponen Sejati!";
-            playAgainBtn.textContent = "Lawan Ulang Raja II";
+            playAgainBtn.textContent = "Ulangi Raja II";
         } else {
             endingTitle.textContent = `STAGE ${currentStage} SELESAI`;
             playAgainBtn.textContent = `Ulangi Stage ${currentStage}`;
-        }
-
-        if (nextStageId) {
-            if (currentStage !== 'boss1' && currentStage !== 'boss2') {
+            if (nextStageId) {
                 const nextLabel = nextStageId === 'boss1'
                     ? 'Raja I: Arachne Umbra'
                     : (nextStageId === 'boss2' ? 'Raja II: Leviathan Akar' : `Stage ${nextStageId}`);
-                endingDesc.textContent = `Kamu telah menaklukkan Stage ${currentStage}! Bersiaplah menghadapi tantangan berikutnya di ${nextLabel}.`;
-            }
-            nextStageBtn.textContent = (nextStageId === 'boss1' || nextStageId === 'boss2')
-                ? 'Hadapi Raja Bayangan (👑)'
-                : `Lanjut ke Stage ${nextStageId}`;
-            nextStageBtn.classList.remove('hidden');
-        } else {
-            if (currentStage !== 'boss2') {
+                endingDesc.textContent = `Kamu telah menaklukkan Stage ${currentStage}! Pilih ${nextLabel} melalui Peta Stage untuk melanjutkan petualangan.`;
+            } else {
                 endingTitle.textContent = "LEGENDA EKSPONEN SEJATI";
                 endingDesc.textContent = "Selamat! Kamu telah menaklukkan seluruh perjalanan epik XHADOW dengan sempurna!";
             }
-            nextStageBtn.classList.add('hidden');
         }
 
         const stageStatName = currentStage === 'boss1' ? 'Raja I' : (currentStage === 'boss2' ? 'Raja II' : `Stage ${currentStage}`);
-        document.getElementById('final-stats').textContent = `${stageStatName} Selesai • Total Kematian: ${deathCount}`;
+        document.getElementById('final-stats').textContent = `${stageStatName} Selesai • Bintang: ${earnedStars}/3 • Total Kematian: ${deathCount}`;
         document.getElementById('ending-screen').classList.remove('hidden');
     }
 
@@ -11056,10 +10214,6 @@ function openQuizModal(quizGate) {
         const slotsWrapper = document.getElementById('dnd-slots-wrapper');
         const slotElements = new Array(quizData.slots.length);
 
-        if (hasStepRows && slotsWrapper && (quizData.stepRows.length >= 4 || quizData.slots.length >= 12)) {
-            slotsWrapper.classList.add('is-dense-grid');
-        }
-
         const refreshSlotsUI = () => {
             slotElements.forEach((el, idx) => {
                 if (!el) return;
@@ -11105,112 +10259,6 @@ function openQuizModal(quizGate) {
                     parentEl.appendChild(opSpan);
                 }
 
-                if (term.isParenFraction) {
-                    const parenFracWrap = document.createElement('div');
-                    parenFracWrap.className = 'dnd-paren-frac-wrap';
-
-                    const parenBox = document.createElement('div');
-                    parenBox.className = 'dnd-paren-frac-box';
-                    parenBox.insertAdjacentHTML('beforeend', `<svg class="math-paren-svg" viewBox="0 0 12 44" preserveAspectRatio="none"><path d="M10 2 C 2 10, 2 34, 10 42" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>`);
-
-                    const fracWrap = document.createElement('div');
-                    fracWrap.className = 'dnd-slot-frac';
-
-                    const numDiv = document.createElement('div');
-                    numDiv.className = 'dnd-slot-frac-num';
-                    (term.numTerms || []).forEach(nt => buildSingleTermNodes(nt, numDiv, true));
-
-                    const denDiv = document.createElement('div');
-                    denDiv.className = 'dnd-slot-frac-den';
-                    (term.denTerms || []).forEach(dt => buildSingleTermNodes(dt, denDiv, true));
-
-                    fracWrap.appendChild(numDiv);
-                    fracWrap.appendChild(denDiv);
-                    parenBox.appendChild(fracWrap);
-
-                    parenBox.insertAdjacentHTML('beforeend', `<svg class="math-paren-svg" viewBox="0 0 12 44" preserveAspectRatio="none"><path d="M2 2 C 10 10, 10 34, 2 42" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>`);
-                    parenFracWrap.appendChild(parenBox);
-
-                    if (Array.isArray(term.expSlots) && term.expSlots.length > 0) {
-                        const expGroup = document.createElement('div');
-                        expGroup.className = 'dnd-exp-group';
-                        term.expSlots.forEach((expItem) => {
-                            if (expItem.op) {
-                                const expOp = document.createElement('span');
-                                expOp.className = 'text-xs sm:text-sm font-extrabold text-white select-none px-0.5';
-                                expOp.textContent = expItem.op;
-                                expGroup.appendChild(expOp);
-                            } else if (typeof expItem.slotIndex === 'number') {
-                                expGroup.appendChild(createSlotElement(expItem.slotIndex, 'slot-frac-exp'));
-                            }
-                        });
-                        parenFracWrap.appendChild(expGroup);
-                    }
-
-                    parentEl.appendChild(parenFracWrap);
-                    return;
-                }
-
-                if (term.isRadical || term.isParenRadical) {
-                    const buildRadicalElement = () => {
-                        const radWrap = document.createElement('div');
-                        radWrap.className = 'dnd-radical-wrap';
-
-                        if (typeof term.rootIndexSlot === 'number') {
-                            const idxWrap = document.createElement('div');
-                            idxWrap.className = 'dnd-radical-index-wrap';
-                            idxWrap.appendChild(createSlotElement(term.rootIndexSlot, 'slot-rad-idx'));
-                            radWrap.appendChild(idxWrap);
-                        }
-
-                        radWrap.insertAdjacentHTML(
-                            'beforeend',
-                            `<svg class="dnd-radical-sym-svg" viewBox="0 0 22 44" preserveAspectRatio="none"><path d="M 2 26 L 7 22 L 13 40 L 21 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`
-                        );
-
-                        const radBody = document.createElement('div');
-                        radBody.className = 'dnd-radical-body';
-                        (term.radTerms || []).forEach(rt => buildSingleTermNodes(rt, radBody, true));
-                        radWrap.appendChild(radBody);
-
-                        return radWrap;
-                    };
-
-                    if (term.isParenRadical) {
-                        const parenRadWrap = document.createElement('div');
-                        parenRadWrap.className = 'dnd-paren-frac-wrap';
-
-                        const parenBox = document.createElement('div');
-                        parenBox.className = 'dnd-paren-frac-box';
-                        parenBox.insertAdjacentHTML('beforeend', `<svg class="math-paren-svg" viewBox="0 0 12 44" preserveAspectRatio="none"><path d="M10 2 C 2 10, 2 34, 10 42" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>`);
-                        parenBox.appendChild(buildRadicalElement());
-                        parenBox.insertAdjacentHTML('beforeend', `<svg class="math-paren-svg" viewBox="0 0 12 44" preserveAspectRatio="none"><path d="M2 2 C 10 10, 10 34, 2 42" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>`);
-
-                        parenRadWrap.appendChild(parenBox);
-
-                        if (Array.isArray(term.expSlots) && term.expSlots.length > 0) {
-                            const expGroup = document.createElement('div');
-                            expGroup.className = 'dnd-exp-group';
-                            term.expSlots.forEach((expItem) => {
-                                if (expItem.op) {
-                                    const expOp = document.createElement('span');
-                                    expOp.className = 'text-xs sm:text-sm font-extrabold text-white select-none px-0.5';
-                                    expOp.textContent = expItem.op;
-                                    expGroup.appendChild(expOp);
-                                } else if (typeof expItem.slotIndex === 'number') {
-                                    expGroup.appendChild(createSlotElement(expItem.slotIndex, 'slot-frac-exp'));
-                                }
-                            });
-                            parenRadWrap.appendChild(expGroup);
-                        }
-
-                        parentEl.appendChild(parenRadWrap);
-                    } else {
-                        parentEl.appendChild(buildRadicalElement());
-                    }
-                    return;
-                }
-
                 if (term.isFraction) {
                     const fracWrap = document.createElement('div');
                     fracWrap.className = 'dnd-slot-frac';
@@ -11229,73 +10277,12 @@ function openQuizModal(quizGate) {
                     return;
                 }
 
-                if (Array.isArray(term.parenInnerTerms)) {
-                    const termWrap = document.createElement('div');
-                    termWrap.className = 'dnd-term-wrap';
-
-                    const openParen = document.createElement('span');
-                    openParen.className = 'dnd-paren-char';
-                    openParen.textContent = '(';
-                    termWrap.appendChild(openParen);
-
-                    term.parenInnerTerms.forEach(innerTerm => buildSingleTermNodes(innerTerm, termWrap, isInsideFraction));
-
-                    const closeParen = document.createElement('span');
-                    closeParen.className = 'dnd-paren-char';
-                    closeParen.textContent = ')';
-                    termWrap.appendChild(closeParen);
-
-                    if (Array.isArray(term.expSlots) && term.expSlots.length > 0) {
-                        const expGroup = document.createElement('div');
-                        expGroup.className = 'dnd-exp-group';
-                        term.expSlots.forEach((expItem) => {
-                            if (expItem.op) {
-                                const expOp = document.createElement('span');
-                                expOp.className = 'text-xs sm:text-sm font-extrabold text-white select-none px-0.5';
-                                expOp.textContent = expItem.op;
-                                expGroup.appendChild(expOp);
-                            } else if (typeof expItem.slotIndex === 'number') {
-                                const expCls = isInsideFraction ? 'slot-frac-exp' : 'slot-step-exp';
-                                expGroup.appendChild(createSlotElement(expItem.slotIndex, expCls));
-                            }
-                        });
-                        termWrap.appendChild(expGroup);
-                    }
-
-                    parentEl.appendChild(termWrap);
-                    return;
-                }
-
                 const termWrap = document.createElement('div');
                 termWrap.className = 'dnd-term-wrap';
 
                 if (typeof term.baseSlot === 'number') {
                     const baseCls = isInsideFraction ? 'slot-frac-base' : 'slot-step-base';
                     termWrap.appendChild(createSlotElement(term.baseSlot, baseCls));
-                }
-
-                if (term.baseText) {
-                    const baseTxtSpan = document.createElement('span');
-                    baseTxtSpan.className = 'dnd-static-base';
-                    baseTxtSpan.innerHTML = term.baseText;
-                    termWrap.appendChild(baseTxtSpan);
-                }
-
-                if (term.expFraction) {
-                    const expFracWrap = document.createElement('div');
-                    expFracWrap.className = 'dnd-exp-frac';
-
-                    const numDiv = document.createElement('div');
-                    numDiv.className = 'dnd-exp-frac-num';
-                    numDiv.appendChild(createSlotElement(term.expFraction.numSlot, 'slot-frac-exp'));
-
-                    const denDiv = document.createElement('div');
-                    denDiv.className = 'dnd-exp-frac-den';
-                    denDiv.appendChild(createSlotElement(term.expFraction.denSlot, 'slot-frac-exp'));
-
-                    expFracWrap.appendChild(numDiv);
-                    expFracWrap.appendChild(denDiv);
-                    termWrap.appendChild(expFracWrap);
                 }
 
                 if (Array.isArray(term.expSlots) && term.expSlots.length > 0) {
@@ -11573,6 +10560,7 @@ function openQuizModal(quizGate) {
                     }, 950);
                 } else {
                     attemptsLeft--;
+                    stageQuizMistakes++;
                     slotElements.forEach((el, idx) => {
                         el.classList.remove('is-correct', 'is-wrong');
                         if (slotValues[idx] !== quizData.slots[idx].answer) {
@@ -11701,6 +10689,7 @@ function openQuizModal(quizGate) {
                     }, 950);
                 } else {
                     attemptsLeft--;
+                    stageQuizMistakes++;
                     btn.disabled = true;
                     btn.style.pointerEvents = 'none';
                     btn.classList.add('opacity-40', 'border-rose-500/60', 'line-through');
